@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Travel UI</title>
+</head>
+<body class="bg-red-50" onload="hideMenu()">
+    <div class="  z-50 fixed w-full bg-heropattern p-6 lg:pb-0 lg:p-5 lg:pl-20 lg:pr-20  lg:gap-10 flex justify-between">
+        <div class=" flex items-center w-1/3 md:w-3/4 m-2 md:pl-5 ">
+            <img src="/vedansh/logo.svg" alt="">
+        </div>
+        <div class=" bg-slate-50 lg:bg-transparent w-full absolute lg:static flex flex-col lg:flex-row items-center lg:gap-10 transition-all ease-in-out duration-1000" id="Menu">
+            <ul class="lg:flex text-left  lg:text-gray-500 lg:gap-10 font-medium">
+                <div class="flex lg:hidden" >
+                    <i class="fa-solid fa-xmark " onclick="hideMenu() "></i>
+                </div>
+                <li class="p-5  pl-0 pr-0">Home</li>
+                <li class="p-5  pl-0 pr-0">About</li>
+                <li class="p-5  pl-0 pr-0">Service</li>
+                <li class="p-5  pl-0 pr-0">Pricing</li>
+                <li class="p-5  pl-0 pr-0">Contact</li>
+            </ul>
+        </div>
+        
+        <div class="hidden lg:flex lg:w-full gd lg:justify-end pt-5 pb-5 gap-8 text-right lg:items-center">
+            <div class="text-gray-500 font-medium">Login</div>
+            <div class="lg:flex lg:justify-center">
+                <button class="lg:bg-purple-800 lg:text-white p-5 pl-10 pr-10 right-10 lg:rounded-full ">Sign Up
+                </button>
+            </div>
+        </div>
+        <div class="lg:hidden">
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </div>
+    </div>
+    <div class="bg-heropattern flex flex-col md:flex gd:flex-row p-6 justify-between sm:p-28 sm:pt-[9rem] sm:pb-0 pb-0 ">
+        <div class="pt-20 pb-10 sm:pb-0">
+            <div class="flex justify-center  bg-red-100 text-red-400 w-60 p-4 mb-7 rounded-full">
+                <button>Explore the World
+                </button>
+                <img class=" m-2 w-5 h-5 " src="/vedansh/service-icon-1.svg" alt="" >
+            </div>
+            <!-- <p class="font-bold  text-7xl text-left pb-5">It's a Big World   </p>
+            <p class="font-bold  text-7xl text-left pb-5">Out There, Go  </p> -->
+            <p class="font-bold  text-4xl md:text-7xl text-left pb-10">It's a Big World Out There, Go Explore  </p>
+            <p class="text-gray-500 text-2xl">We always make our customer happy by providing</p>
+            <p class="text-gray-500 text-2xl">as many choices as possible.</p>
+            <div class="flex flex-col  sm:flex sm:flex-row pt-12 sm:gap-10">
+                <div class="flex justify-center  bg-red-500 text-white w-52 h-14 p-4 mb-7 sm:mb-0 rounded-full">
+                    <button>Plan a Trip
+                    </button>
+                </div>
+                <div class=" flex ">
+                    <div>
+                        <img class="rounded-full w-16 sm:w-20" src="/vedansh/hero-button-img.jpg" alt="">
+                    </div>
+                    <div class=" flex  items-center justify-between p-5 font-semibold ">
+                        Watch our Story
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <img class="w-100 items-center justify-center " src="/vedansh/hero-banner.png" alt="" >
+        </div>
+    </div>
+    <div class=" bg-red-50 flex flex-col justify-center text-left sm:p-20 sm:flex-row leading-7">
+        <div class=" p-4 m-4 rounded-lg">
+            <h1 class="text-blue-700 font-semibold pb-4">WHAT WE SERVE</h1>
+            <h2 class="font-bold text-5xl  text-left pb-8">Top Values For You</h2>
+            <p class="text-left">Try a variety of benifits when using our service.</p>
+        </div>
+        <div class="bg-yellow-50 p-4 m-4 rounded-lg">
+            <img src="/vedansh/service-icon-1.svg" alt="" class=" m-2 w-12 h-12">
+            <h2 class="font-bold text-3xl  text-left pb-4 ">Lot Of Choices</h2>
+            <p class="text-left">Total 460+ destination that we work with.</p>
+        </div>
+        <div class="bg-pink-200 p-4 m-4 rounded-lg sm:relative -bottom-20">
+            <img src="/vedansh/service-icon-2.svg" alt="" class="m-2 w-12 h-12" >
+            <h2 class="font-bold text-3xl  text-left pb-4 ">Best Tour Guide</h2>
+            <p  class="text-left">Our tour guide with 15+ years of experience.</p>
+        </div>
+        <div class="bg-purple-100 p-4 m-4 rounded-lg">
+            <img src="/vedansh/service-icon-3.svg" alt="" class="m-2 w-12 h-12">
+            <h2 class="font-bold text-3xl text-left pb-4">Easy Booking</h2>
+            <p class="text-left">With an easy and fast ticket purchase process.</p>
+        </div>
+    </div>
+    <div class="pt-32 bg-red-50 ">
+        <div>
+            <h1 class="text-blue-700 text-xl font-semibold pb-4 text-center ">TOP DESTINATION</h1>
+            <div class="font-semibold text-5xl text-center">Explore Top Destination</div>
+        </div>
+        <div class="flex flex-wrap justify-center m-7 ml-10 sm:ml-16 mb-0 ">
+            <div class="relative  mb-6 sm:m-6 w-96 ">
+                <img src="/vedansh/destination-1.jpg" alt="" class="bg-amber-50 h-96  rounded-3xl sm:mb-8">
+                
+                <div class="text-blue-700 font-bold p-4 mb-1 bg-white rounded-3xl w-20 absolute top-4 right-7 text-center sm:right-12">$340</div>
+                <div class="font-bold text-2xl pb-2 text-wrap">Enjoy the Beauty of Del Pencio.</div>
+                <p class="text-gray-500 pb-2 font-medium">Rome,italy.</p>
+                <div class="flex">
+                    <div class="flex justify-between p-4 bg-white rounded-3xl  h-12 w-20 text-center">
+                        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                        <div class="text-yellow-300 font-semibold   flex items-center justify-center">4.9</div>
+                    </div>
+                    <div class="flex items-center text-gray-500 pl-2 font-normal">(11.1k Reviews)</div>
+                </div>
+            </div>
+            <div class="relative mb-6 sm:m-6 w-96">
+                <img src="/vedansh/destination-2.jpg" alt="" class="bg-amber-50 h-96  rounded-3xl sm:mb-8">
+                <div class="text-blue-700 font-bold p-4 mb-1 bg-white rounded-3xl w-20 absolute top-4 right-7 text-center sm:right-12">$340</div>
+                <div class="font-bold text-2xl pb-2 text-wrap">Enjoy the Beauty of Pakistan Monument.</div>
+                <p class="text-gray-500 pb-2 font-medium">Islamabad,Pakistan.</p>
+                <div class="flex">
+                    <div class="flex justify-between p-4 bg-white rounded-3xl  h-12 w-20 text-center">
+                        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                        <div class="text-yellow-300 font-semibold   flex items-center justify-center">4.9</div>
+                    </div>
+                    <div class="flex items-center text-gray-500 pl-2 font-normal">(16.9k Reviews)</div>
+                </div>
+            </div>
+            <div class="relative mb-6 sm:m-6 w-96">
+                <img src="/vedansh/destination-3.jpg" alt="" class="bg-amber-50 h-96  rounded-3xl sm:mb-8">
+                <div class="text-blue-700 font-bold p-4 mb-1 bg-white rounded-3xl w-20 absolute top-4 right-7 text-center sm:right-12">$340</div>
+                <div class="font-bold text-2xl pb-2 text-wrap">Enjoy the Beauty of Burj Khalifa.</div>
+                <p class="text-gray-500 pb-2 font-medium">Skyscraper in Dubai.</p>
+                <div class="flex">
+                    <div class="flex justify-between p-4 bg-white rounded-3xl  h-12 w-20 text-center">
+                        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                        <div class="text-yellow-300 font-semibold   flex items-center justify-center">4.9</div>
+                    </div>
+                    <div class="flex items-center text-gray-500 pl-2 font-normal">(120k Reviews)</div>
+                </div>
+            </div>
+            <div class="relative mb-6 sm:m-6 w-96">
+                <img src="/vedansh/destination-4.jpg" alt="" class="bg-amber-50 h-96  rounded-3xl sm:mb-8">
+                <div class="text-blue-700 font-bold p-4 mb-1 bg-white rounded-3xl w-20 absolute top-4 right-7 text-center sm:right-12">$340</div>
+                <div class="font-bold text-2xl pb-2 text-wrap">Enjoy the Beauty of Milaidhoo.</div>
+                <p class="text-gray-500 pb-2 font-medium">Island in the Lakshadweep.</p>
+                <div class="flex">
+                    <div class="flex justify-between p-4 bg-white rounded-3xl  h-12 w-20 text-center">
+                        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                        <div class="text-yellow-300 font-semibold   flex items-center justify-center">4.9</div>
+                    </div>
+                    <div class="flex items-center text-gray-500 pl-2 font-normal">(100k Reviews)</div>
+                </div>
+            </div>
+            <div class="relative mb-6 sm:m-6 w-96">
+                <img src="/vedansh/destination-5.jpg" alt="" class="bg-amber-50 h-96  rounded-3xl sm:mb-8">
+                <div class="text-blue-700 font-bold p-4 mb-1 bg-white rounded-3xl w-20 absolute top-4 right-7 text-center sm:right-12">$340</div>
+                <div class="font-bold text-2xl pb-2 text-wrap">Enjoy the Beauty of Ko Tao.</div>
+                <p class="text-gray-500 pb-2 font-medium">Island in the Gulf of Thailand.</p>
+                <div class="flex">
+                    <div class="flex justify-between p-4 bg-white rounded-3xl  h-12 w-20 text-center">
+                        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                        <div class="text-yellow-300 font-semibold   flex items-center justify-center">4.9</div>
+                    </div>
+                    <div class="flex items-center text-gray-500 pl-2 font-normal">(985 Reviews)</div>
+                </div>
+            </div>
+            <div class="relative mb-6 sm:m-6 w-96">
+                <img src="/vedansh/destination-6.jpg" alt="" class="bg-amber-50 h-96  rounded-3xl sm:mb-8  flex">
+                <div class="text-blue-700 font-bold p-4 mb-1 bg-white rounded-3xl w-20 absolute top-4 right-7 text-center sm:right-12">$340</div>
+                <div class="font-bold text-2xl pb-2 text-wrap">Enjoy the Beauty of Grand Macidiye Mosque.</div>
+                <p class="text-gray-500 pb-2 font-medium">Mosque in Istanbul,Turkiye.</p>
+                <div class="flex">
+                    <div class="flex justify-between p-4 bg-white rounded-3xl  h-12 w-20 text-center">
+                        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                        <div class="text-yellow-300 font-semibold   flex items-center justify-center">4.9</div>
+                    </div>
+                    <div class="flex items-center text-gray-500 pl-2 font-normal">(29.6k Reviews)</div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="flex justify-center bg-red-50">
+        <button class="bg-purple-800 text-white p-4 rounded-3xl ">View All Destination
+        </button>
+    </div>
+
+    <div class="bg-red-50 flex flex-col-reverse md:flex gd:flex-row p-6 justify-between sm:p-28 sm:pt-14 pb-0 sm:pb-0">
+        <div class="flex ">
+            <img class="  items-center justify-center gd:size-100 " src="/vedansh/experience-banner.png" alt="" >
+        </div>
+        <div class=" pb-20 pt-20 gd:pl-40 gd:w-3/4 ">
+            <h1 class="text-blue-700 text-xl font-semibold pb-4  ">TOP DESTINATION</h1>
+            <p class="font-bold text-5xl text-left pb-5 leading-tight">With Our Experience We Will Serve You   </p>
+            
+            <p class="text-gray-500 text-2xl leading-8">Since we first opened, we have always prioritised the convenience of our users by providing low prices and with a easy process.</p>
+            <!-- <p class="text-gray-500 text-2xl">as many choices as possible.</p> -->
+            <!-- <div class="flex flex-col sm:flex sm:flex-row sm:justify-between pt-12">
+                <div class="flex justify-center  bg-red-500 text-white w-60 p-4 mb-7 rounded-full">
+                    <button>Plan a Trip
+                    </button>
+                </div>
+                <div class=" flex ">
+                    <div>
+                        <img class="rounded-full w-20" src="/vedansh/hero-button-img.jpg" alt="">
+                    </div>
+                    <div class=" flex  items-center justify-between p-5 font-semibold ">
+                        Watch our Story
+                    </div>
+                </div>
+            </div> -->
+            <div class="flex pt-10">
+                <div class=" pr-[7px] sm:pr-7">
+                    <div class="text-blue-700 font-bold text-3xl sm:text-4xl text-left pb-5 leading-tight">20</div>
+                    <div class="text-gray-500 text-base leading-8">Years </div>
+                    <div class="text-gray-500 text-base leading-8"> Experience</div>
+                </div>
+                <div class=" pr-[7px] sm:pr-7">
+                    <div class="text-blue-700 font-bold text-3xl sm:text-4xl text-left pb-5 leading-tight">460+
+                    </div>
+                    <div class="text-gray-500 text-base leading-8">Destinaiton </div>
+                    <div class="text-gray-500 text-base leading-8"> Collaboration</div>
+                </div>
+                <div >
+                    <div class="text-blue-700 font-bold text-3xl sm:text-4xl text-left pb-5 leading-tight">50K+</div>
+                    <div class="text-gray-500 text-base  leading-8">Happy </div>
+                    <div class="text-gray-500 text-base leading-8"> Customer</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="pt-32 bg-red-50">
+        <div>
+            <h1 class="text-blue-700 text-xl font-semibold pb-4 text-center ">PHOTO GALLARY</h1>
+            <div class="font-semibold text-5xl text-center">Photo's From Travellers</div>
+        </div>
+        <div class="flex flex-wrap justify-center m-7 mb-0">
+            <div class="relative mb-6 sm:m-6 w-96">
+                <div class="flex">
+                    <img src="/vedansh/gallery-1.jpg" alt="" class="bg-amber-50 h-48   w-1/2 m-1 rounded-3xl ">
+                    <img src="/vedansh/gallery-2.jpg" alt="" class="bg-amber-50 h-48   w-1/2 m-1 rounded-3xl ">
+                </div>
+                <div>
+                    <img src="/vedansh/gallery-3.jpg" alt="" class="bg-amber-50 h-48 w-96 rounded-3xl ">
+                </div>
+            </div>
+            <div class="relative mb-6 sm:m-6 w-96">
+                <img src="/vedansh/gallery-4.jpg" alt="" class="bg-amber-50 h-96  rounded-3xl ">
+            </div>
+            <div class="relative mb-6 sm:m-6 w-96">
+                <div>
+                    <img src="/vedansh/gallery-5.jpg" alt="" class="bg-amber-50 h-48 w-96 m-1 rounded-3xl ">
+                    <img src="/vedansh/gallery-6.jpg" alt="" class="bg-amber-50 h-48 w-96 m-1 rounded-3xl ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col  items-center justify-center m-8 sm:m-20 bg-bottompattern rounded-3xl">
+        <div class="  gd:ml-60 gd:mr-60 md:mt-8 font-bold text-3xl md:text-5xl text-center pt-5 sm:pt-0 pb-5 leading-tight">
+            Prepare Yourself And Let's Explore The Beauty Of The World.
+            <img class=" m-2 w-10 h-10 inline " src="/vedansh/service-icon-1.svg" alt="" >
+        </div>
+        <div class="   gd:ml-60 gd:mr-60 md:mt-8 pb-5 text-center">We have many special offers, specially for you.</div>
+        <div class="flex justify-center bg-bottompattern m-4 md:mb-8 ">
+            <button class="bg-purple-800 text-white p-4 rounded-3xl ">Get Started
+            </button>
+        </div>
+    </div>
+    <div class=" bg-red-50 p-6 flex-col sm:flex sm:flex-row sm:gap-5 sm:p-24 sm:pb-10 ">
+        <div class=" w-1/4 m-2">
+            <img src="/vedansh/logo.svg" alt="" class="pb-5">
+            <p class="hidden sm:flex">We always make our customer happy by providing as many as choices as possible.</p>
+        </div>
+        <div class="w-1/5 m-2">
+            <ul>
+                <li class="font-semibold text-lg ">About</li>
+                <li class="font-normal hidden sm:flex">About Us</li>
+                <li class="font-normal hidden sm:flex">Features</li>
+                <li class="font-normal hidden sm:flex">News</li>
+                <li class="font-normal hidden sm:flex">Menu</li>
+            </ul>
+        </div>
+        <div class="w-1/5 m-2">
+            <ul>
+                <li class="font-semibold text-lg">Company</li>
+                <li class="font-normal hidden sm:flex">About Us</li>
+                <li class="font-normal hidden sm:flex">Features</li>
+                <li class="font-normal hidden sm:flex">News</li>
+                <li class="font-normal hidden sm:flex">Menu</li>
+            </ul>
+        </div>
+        <div class="w-1/5 m-2">
+            <ul>
+                <li class="font-semibold text-lg ">Support</li>
+                <li class="font-normal hidden sm:flex">About Us</li>
+                <li class="font-normal hidden sm:flex">Features</li>
+                <li class="font-normal hidden sm:flex">News</li>
+                <li class="font-normal hidden sm:flex">Menu</li>
+            </ul>
+        </div>
+        <div class="w-1/5 m-2">
+            <ul>
+                <li class="font-semibold text-lg ">Contact Us</li>
+                <li class="font-normal hidden sm:flex">About Us</li>
+                <li class="font-normal hidden sm:flex">Features</li>
+                <li class="font-normal hidden sm:flex">News</li>
+                <li class="font-normal hidden sm:flex">Menu</li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="flex  justify-between bg-red-50 p-6 sm:p-24 sm:pb-10">
+        <div>
+            Copyright 2024.
+        </div>
+        <div class=" hidden sm:flex sm:flex-col justify-between ">
+            <div>Terms and Condition</div>
+            <div>Privacy and Policy</div>
+        </div>
+    </div>
+
+    <script>
+        var menu= document.getElementById("Menu");
+
+        function hideMenu(){
+            menu.style.top="-100rem"; 
+        }
+        function showMenu(){
+            menu.style.right="0"; 
+            menu.style.top="5rem"; 
+        }
+    </script>
+</body>
+</html>
