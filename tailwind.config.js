@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        heropattern:'url("/vedansh/hero-bg.jpg")',
-        bottompattern:'url("/vedansh/cta-bg.jpg")'
+        heropattern:'url("./vedansh/hero-bg.jpg")',
+        bottompattern:'url("./vedansh/cta-bg.jpg")'
       },
       spacing:{
         100: '40rem'
